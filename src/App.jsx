@@ -1,7 +1,6 @@
 import './App.css'
 import Menu from './components/Menu'
 import PhotoCard from './components/PhotoCard'
-import './styles.scss'
 
 
 function App() {

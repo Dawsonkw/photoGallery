@@ -10,23 +10,7 @@ const ImageUpload = (props) => {
     const handleFormSubmit = async (event) => {
         event.preventDefault();   
         let photoURL = null
-
-        if(selectedImage) {
-            const storageRef = ref(storage, ``);
-            await uploadBytes(storageRef, selectedImage)
-            const downloadURL = await getDownloadURL(storageRef);
-            photoURL = downloadURL;
-        }
-        try {
-            console.log('Photo uploaded successfully')
-
-
-      
-        } catch (error) {
-            console.error(error);
-        }
-
-    };
+    }
 
     return (
         <div>
