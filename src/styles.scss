@@ -1,16 +1,74 @@
-.button {
-    background-color: aquamarine;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: max-content;
-    height: fit-content;
+$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+$card-bg: #f9e79f;
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .App {
-    background-color: blueviolet;
+    background-color: rebeccapurple;
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vh;
+    margin: none;
+    
+}
+.menu {
+    width: 8rem;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    
+}
+
+.icons {
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 38px;
+}
+.icons:hover {
+    color: cornflowerblue;
+}
+
+
+
+.photoCard {
+    background-color: $card-bg;
+    padding: 2rem;
+    height: 35rem;
+    margin: 2rem;
+    box-shadow: 3px 3px 3px ;
+    border-radius: 30px;
+ 
+}
+
+.textArea {
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    height: 100vh;
+    border: solid black;
+    height: 15rem;
 }
+
+img {
+    max-width: 20rem;
+
+}
+
