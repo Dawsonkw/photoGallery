@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import {BsFillCloudUploadFill} from 'react-icons/bs';
 import {AiOutlineLogin, AiOutlineLogout} from 'react-icons/ai';
 import {MdOutlineManageAccounts} from 'react-icons/md'
-import ImageUpload from './imageUpload';
+import ImageUpload from './ImageUpload';
 
 
 
