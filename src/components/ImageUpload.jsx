@@ -30,13 +30,13 @@ const ImageUpload = (props) => {
             await uploadBytes(storageRef, image)
             const downloadURL = await getDownloadURL(storageRef);
             
-            console.log('Image Uploaded: ', image.name, downloadURL)
             try {
                 console.log(photoURL)
                 setImage(null)
                 setImagePreview(null)
                 document.getElementById('imageInput').value='';
                 return image.name
+                props.onImageUpload();
             }
             catch {
                 console.log(error)

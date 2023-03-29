@@ -58,17 +58,40 @@
     justify-content: start;
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: none;
     
 }
+
+.gallery {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.photoCard {
+    background-color: cadetblue;
+    padding: 2rem;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem 2rem 2rem 4rem;
+    border-radius: 15px ;
+    box-shadow: 2px 3px black;
+}
+
 .menu {
     width: fit-content;
     background-color: gainsboro;
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    position: fixed;
+    height: 100vh;
     
 }
 
@@ -93,19 +116,6 @@
     color: cornflowerblue;
 }
 
-
-
-.photoCard {
-    background-color: cadetblue;
-    padding: 2rem;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 2rem;
-    border-radius: 15px ;
-    box-shadow: 2px 3px black;
-}
 
 .textArea {
     display: flex;
